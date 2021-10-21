@@ -4,7 +4,7 @@ const validator = require('../src/middleware/validator');
 
 describe('Given logger', () => {
   describe('When called', () => {
-    it('Then passes to next function', async () => {
+    it('passes to next the function', async () => {
       let requestObject = {
         param: {
           id: 1
@@ -17,7 +17,7 @@ describe('Given logger', () => {
       expect(nextFunction).toHaveBeenCalled();
     });
 
-    it('Then can throw error', () => {
+    it('can throw an error', () => {
       let requestObject = {
         param: {}
       }
