@@ -4,7 +4,7 @@ const logger = require('../src/middleware/logger');
 
 describe('Given logger', () => {
   describe('When called', () => {
-    it('Then passes to next function', async () => {
+    it('passes to next the function', async () => {
       let requestObject = {}
       let responseObject = {};
       let nextFunction = jest.fn();
