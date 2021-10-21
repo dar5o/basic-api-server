@@ -41,7 +41,7 @@ afterAll(async () => {
 
 describe('Given /food', () => {
   describe('When GET', () => {
-    it('Then returns correct response body & status', async () => {
+    it('returns correct response body & status', async () => {
       const response = await mockRequest.get('/food');
       expect(response.status).toStrictEqual(200);
       expect(response.body).toStrictEqual(
@@ -76,7 +76,7 @@ describe('Given /food', () => {
   });
 
   describe('When POST', () => {
-    it('Then returns correct response body & status', async () => {
+    it('returns correct response body & status', async () => {
       const requestBody = {
         name: 'Ramen Noodles',
         price: 1.00,
@@ -94,7 +94,7 @@ describe('Given /food', () => {
 
 describe('Given /food/:id', () => {
   describe('When GET', () => {
-    it('Then returns correct response body & status', async () => {
+    it('returns correct response body & status', async () => {
       const response = await mockRequest.get('/food/1');
       expect(response.status).toStrictEqual(200);
       expect(response.body).toStrictEqual(
@@ -111,7 +111,7 @@ describe('Given /food/:id', () => {
   });
 
   describe('When PUT', () => {
-    it('Then returns correct response body & status', async () => {
+    it('returns correct response body & status', async () => {
       const requestBody = {
         name: 'Yellow Fin Tuna',
         price: 64.99,
@@ -127,7 +127,7 @@ describe('Given /food/:id', () => {
   });
 
   describe('When DELETE', () => {
-    it('Then returns correct response body & status', async () => {
+    it('returns correct response body & status', async () => {
       const response = await mockRequest.delete('/food/1');
       expect(response.status).toStrictEqual(200);
       expect(response.body).toStrictEqual(1);
